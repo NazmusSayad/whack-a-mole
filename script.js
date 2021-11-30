@@ -43,8 +43,9 @@ function runOnClick() {
     score.innerHTML = Number(score.innerHTML) + 1;
     msgBox.innerHTML = "";
   } else {
-    msgBox.innerHTML = "Wrong!";
-    aud.stop();
+    msgBox.innerHTML = "Wrong!";            
+  //  aud.pause();
+    aud.currentTime = 0;
     aud.play();
     setTimeout(() => {
       msgBox.innerHTML = "";
