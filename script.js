@@ -44,7 +44,7 @@ function runOnClick() {
     msgBox.innerHTML = "";
   } else {
     msgBox.innerHTML = "Wrong!";            
-  //  aud.pause();
+    aud.pause();
     aud.currentTime = 0;
     aud.play();
     setTimeout(() => {
